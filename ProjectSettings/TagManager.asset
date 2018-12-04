@@ -18,8 +18,8 @@ TagManager:
   - EnemyTrigger
   - Player
   - Ground
-  - 
-  - 
+  - Coin
+  - GroundChek
   - 
   - 
   - 

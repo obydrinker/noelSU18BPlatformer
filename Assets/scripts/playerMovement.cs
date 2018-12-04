@@ -28,10 +28,10 @@ public class playerMovement : MonoBehaviour
         rbody.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rbody.velocity.y);
 
         //Om hopp-knappen är nedtryckt hoppa men bara om...
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             //...colliderna som kollar om spelaren står i backen är true.
-            if (groundcheck.isGrounded == true)
+            if (groundcheck.isGrounded > 0)
             {
 
                 //Sätt en hastighet i hoppet.
